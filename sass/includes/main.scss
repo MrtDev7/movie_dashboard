@@ -1,0 +1,196 @@
+/********************************
+        Main Content Style
+*********************************/
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+body {
+    font-family: $font-family, sans-serif;
+    background: $primary-bg-color;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: $font-size;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: $second-text-color;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+h2 {
+    color: $text-color;
+}
+
+h6 {
+    color: $text-color;
+}
+
+th {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.more-container {
+    display: none;
+}
+
+.overview-card {
+    background: $second-bg-color;
+    height: 6.0rem;
+    border-radius: 8px;
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+    padding: 25px;
+    transition: all 0.4s;
+    &:hover {
+        .overview-value {
+            color: white;
+        }
+        .more-container {
+            display: flex;
+        }
+        color: white;
+        background: $main-color;
+        transform: scale(0.9);
+        z-index: 900000;
+    }
+}
+
+.overview-value {
+    color: $main-color;
+}
+
+.table-container {
+    background-color: $third-bg-color;
+    border-radius: 15px;
+    padding: 0px;
+    font-size: $font-size;
+    padding: 8px 0px 8px 0px;
+    max-height: 500px!important;
+    overflow: scroll;
+}
+
+.table-head {
+    background: $second-bg-color;
+    border-radius: 15px;
+}
+
+.table-item-btn {
+    margin: 5px;
+    background: $third-bg-color;
+    color: white;
+    outline: none;
+}
+
+.card-content {
+    background: $second-bg-color;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile+label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+
+.inputfile:focus+label,
+.inputfile+label:hover {
+    background-color: red;
+}
+
+.inputfile+label {
+    cursor: pointer;
+    /* "hand" cursor */
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    color: $text-color;
+    word-wrap: break-word;
+    background-color: $second-bg-color;
+    background-clip: border-box;
+    border-radius: .25rem;
+}
+
+.info-container {
+    background-color: $third-bg-color;
+    color: white;
+    overflow: hidden;
+}
+
+.nav-btn {
+    padding: 10px 15px;
+    &:hover {
+        background: $main-color;
+        border-radius: 5px;
+    }
+}
+
+.btn-white {
+    color: $text-color;
+    &:hover {
+        color: $text-color;
+    }
+}
+
+.btn-tab-movie {
+    background-color: $primary-bg-color !important;
+    color: white !important;
+    border: 1px solid white;
+    padding: 10px 15px;
+    line-height: 20px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s;
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+
+.btn-tab-movie-active {
+    background-color: $main-color !important;
+    color: white !important;
+    padding: 10px 15px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 20px;
+    margin-top: 10px;
+    transition: all 0.4s;
+    &:hover {
+        transform: scale(0.9);
+    }
+}

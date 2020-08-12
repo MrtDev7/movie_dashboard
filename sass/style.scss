@@ -1,0 +1,95 @@
+/* sass template */
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import "./includes/variebles.scss";
+@import "./includes/navbar.scss";
+@import "./includes/slider.scss";
+@import "./includes/main.scss";
+@import "./includes/color.scss";
+
+/* ---------------------------------------------------
+    scroll bar
+----------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: none;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #2B343B;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(78, 91, 100);
+}
+
+ ::-moz-scrollbar-button,
+ ::-webkit-scrollbar-button {
+    width: 0px;
+}
+
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background: $main-color;
+}
+
+.select2-container--default .select2-results__option--selected {
+    background: $third-bg-color;
+}
+
+.select2-dropdown {
+    background: $primary-bg-color;
+    color: $text-color;
+    border: 1px solid white;
+    &:hover {
+        background: $third-bg-color;
+    }
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    color: $text-color;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    background-color: transparent;
+    border: none;
+    color: $text-color;
+}
+
+.alert-primary {
+    background: $main-color;
+    color: $text-color;
+    border: none;
+    display: none;
+}
+
+
+/* ---------------------------------------------------
+    switch
+----------------------------------------------------- */
