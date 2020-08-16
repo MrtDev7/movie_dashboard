@@ -172,9 +172,6 @@ body {
 
 p {
   font-family: 'Poppins', sans-serif;
-  font-size: 0.75em;
-  font-weight: 300;
-  line-height: 1.7em;
   color: #b6b5b5; }
 
 a,
@@ -317,6 +314,82 @@ th {
   .btn-tab-movie-active:hover {
     transform: scale(0.9); }
 
+.cast-item-container {
+  background: #222A31;
+  border-radius: 12px;
+  padding: 0px;
+  transition: all 0.4s;
+  margin: 10px; }
+  .cast-item-container:hover {
+    background: #7B68EE; }
+    .cast-item-container:hover .cast-img {
+      border-radius: 10px;
+      max-height: 250px;
+      transform: scale(0.95); }
+    .cast-item-container:hover .cast-role {
+      margin: 5px;
+      color: white; }
+    .cast-item-container:hover .cast-buttons {
+      display: flex;
+      position: absolute;
+      text-align: center;
+      top: 25px;
+      right: 25px; }
+    .cast-item-container:hover .more-btn {
+      background: transparent;
+      padding: 5px; }
+  .cast-item-container .cast-img {
+    border-radius: 10px;
+    max-height: 250px;
+    transition: all 0.4s; }
+  .cast-item-container .cast-name {
+    margin: 5px; }
+  .cast-item-container .cast-role {
+    margin: 5px;
+    color: #b6b5b5; }
+
+.cast-buttons {
+  display: none; }
+
+.config-btn {
+  transition: all 0.4s; }
+  .config-btn:hover {
+    transform: scale(0.9); }
+
+.comments-profile-img {
+  height: 55px;
+  width: 55px;
+  border-radius: 100px;
+  transition: all 0.4s; }
+  .comments-profile-img:hover {
+    transform: scale(0.9); }
+
+.comment-setting-button {
+  display: none;
+  transition: all 0.4s; }
+
+.comment-setting-container {
+  background: #2B343B;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 50px;
+  transition: all 0.4s;
+  display: none; }
+
+.comment-container {
+  background: #2B343B;
+  border-radius: 10px;
+  transition: all 0.4s;
+  margin-top: 10px; }
+  .comment-container:hover {
+    transform: scale(0.99); }
+    .comment-container:hover .comment-setting-container {
+      background: #7B68EE; }
+    .comment-container:hover .comment-setting-button {
+      display: flex; }
+      .comment-container:hover .comment-setting-button:hover {
+        transform: scale(1.2); }
+
 .main-color-bg {
   background: #7B68EE; }
 
@@ -331,6 +404,10 @@ th {
 
 .third-bg-color {
   color: #222A31; }
+
+* {
+  margin: 0;
+  padding: 0; }
 
 /* ---------------------------------------------------
     scroll bar

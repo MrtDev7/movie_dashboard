@@ -6,6 +6,11 @@
 @import "./includes/slider.scss";
 @import "./includes/main.scss";
 @import "./includes/color.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+
 
 /* ---------------------------------------------------
     scroll bar

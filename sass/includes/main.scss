@@ -21,9 +21,6 @@ body {
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: $font-size;
-    font-weight: 300;
-    line-height: 1.7em;
     color: $second-text-color;
 }
 
@@ -192,5 +189,102 @@ th {
     transition: all 0.4s;
     &:hover {
         transform: scale(0.9);
+    }
+}
+
+.cast-item-container {
+    background: $third-bg-color;
+    border-radius: 12px;
+    padding: 0px;
+    transition: all 0.4s;
+    margin: 10px;
+    &:hover {
+        background: $main-color;
+        .cast-img {
+            border-radius: 10px;
+            max-height: 250px;
+            transform: scale(0.95);
+        }
+        .cast-role {
+            margin: 5px;
+            color: white;
+        }
+        .cast-buttons {
+            display: flex;
+            position: absolute;
+            text-align: center;
+            top: 25px;
+            right: 25px;
+        }
+        .more-btn {
+            background: transparent;
+            padding: 5px;
+        }
+    }
+    .cast-img {
+        border-radius: 10px;
+        max-height: 250px;
+        transition: all 0.4s;
+    }
+    .cast-name {
+        margin: 5px;
+    }
+    .cast-role {
+        margin: 5px;
+        color: $second-text-color;
+    }
+}
+
+.cast-buttons {
+    display: none;
+}
+
+.config-btn {
+    transition: all 0.4s;
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+
+.comments-profile-img {
+    height: 55px;
+    width: 55px;
+    border-radius: 100px;
+    transition: all 0.4s;
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+
+.comment-setting-button {
+    display: none;
+    transition: all 0.4s;
+}
+
+.comment-setting-container {
+    background: $second-bg-color;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 50px;
+    transition: all 0.4s;
+    display: none;
+}
+
+.comment-container {
+    background: $second-bg-color;
+    border-radius: 10px;
+    transition: all 0.4s;
+    margin-top: 10px;
+    &:hover {
+        transform: scale(0.99);
+        .comment-setting-container {
+            background: $main-color;
+        }
+        .comment-setting-button {
+            display: flex;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
     }
 }
