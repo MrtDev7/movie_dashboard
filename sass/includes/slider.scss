@@ -8,6 +8,7 @@
     background: $second-bg-color;
     color: #fff;
     transition: all 0.4s;
+    position: relative;
     &.active {
         min-width: 80px;
         max-width: 80px;
